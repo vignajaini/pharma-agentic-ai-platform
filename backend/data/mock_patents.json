@@ -1,0 +1,6 @@
+{
+  "Metformin": [
+    { "patent_id": "US123", "status": "expired", "expiry": "2024-05-01" },
+    { "patent_id": "US456", "status": "active", "expiry": "2028-07-01" }
+  ]
+}

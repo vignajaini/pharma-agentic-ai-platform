@@ -1,0 +1,4 @@
+{
+  "default": { "market_size": 200000000, "cagr": 7.5 },
+  "Metformin": { "market_size": 1200000000, "cagr": 8.5 }
+}

@@ -1,0 +1,6 @@
+{
+  "Metformin": [
+    { "trial_id": "NCT0001", "phase": "Phase II", "status": "Recruiting" },
+    { "trial_id": "NCT0002", "phase": "Phase III", "status": "Completed" }
+  ]
+}

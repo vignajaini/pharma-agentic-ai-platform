@@ -1,0 +1,4 @@
+{
+  "default": { "exports": 1000, "imports": 800 },
+  "Metformin": { "exports": 15000, "imports": 12000 }
+}
