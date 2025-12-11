@@ -1,6 +1,12 @@
-from flask import Flask, request, jsonify
+import sys
+import os
+from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
-from agents.master_agent import MasterAgent
+
+# Add parent directory to path for imports
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from master_agent import MasterAgent
 
 app = Flask(__name__)
 CORS(app)
@@ -26,6 +32,27 @@ def get_mit(molecule):
     if not mit:
         return jsonify({"error": "MIT not found"}), 404
     return jsonify(mit)
+
+@app.route("/report/<molecule>", methods=["GET"])
+def download_report(molecule):
+    """Download PDF report for a molecule"""
+    try:
+        mit = master.get_mit(molecule)
+        if not mit:
+            return jsonify({"error": "MIT not found for molecule"}), 404
+        
+        # Generate the PDF
+        pdf_path = master.reporter.generate_pdf_summary(mit)
+        
+        # Send the file
+        return send_file(
+            pdf_path,
+            mimetype='application/pdf',
+            as_attachment=True,
+            download_name=f'{molecule}_report.pdf'
+        )
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
