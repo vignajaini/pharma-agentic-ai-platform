@@ -1,0 +1,422 @@
+.panel {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.panel h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+
+.panel-empty {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Cards */
+.data-card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 4px solid var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.data-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.data-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.data-card h4 {
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.data-card p {
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.metric-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0;
+}
+
+/* Score Display */
+.score-display {
+  margin-top: 1rem;
+}
+
+.score-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.score-bar {
+  width: 100%;
+  height: 30px;
+  background: #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.score-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50 0%, #8bc34a 100%);
+  transition: width 0.6s ease;
+}
+
+/* Lists */
+.data-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.data-list li {
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  position: relative;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.data-list li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* Tables */
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+thead {
+  background: var(--primary);
+  color: white;
+}
+
+th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+tbody tr:hover {
+  background: #f5f5f5;
+}
+
+/* Patents */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.summary-card h4 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.summary-card .metric-value {
+  color: white;
+  font-size: 2rem;
+}
+
+.patents-list,
+.trials-list,
+.web-results-list,
+.insights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.patent-card,
+.trial-card,
+.web-result-card,
+.insight-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.patent-card:hover,
+.trial-card:hover,
+.web-result-card:hover,
+.insight-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.patent-card,
+.trial-card {
+  border-left: 4px solid var(--primary);
+}
+
+.patent-header,
+.result-header,
+.trial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.patent-header h4,
+.trial-header h4,
+.result-header h4 {
+  margin: 0;
+  color: var(--primary);
+}
+
+.result-header h4 a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.result-header h4 a:hover {
+  text-decoration: underline;
+}
+
+.patent-status,
+.trial-phase,
+.result-source {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.patent-status,
+.result-source {
+  background: #e3f2fd;
+  color: var(--primary);
+}
+
+.trial-phase {
+  display: inline-block;
+}
+
+.patent-card p,
+.trial-card p {
+  margin: 0.5rem 0;
+  color: var(--text-primary);
+}
+
+.patent-abstract,
+.trial-description {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.patent-abstract strong,
+.trial-description strong {
+  color: var(--primary);
+}
+
+.patent-abstract p,
+.trial-description p {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+.status-active {
+  background: #c8e6c9;
+  color: #2e7d32;
+}
+
+.status-completed {
+  background: #b3e5fc;
+  color: #01579b;
+}
+
+.status-recruiting {
+  background: #fff9c4;
+  color: #f57f17;
+}
+
+.status-terminated {
+  background: #ffccbc;
+  color: #bf360c;
+}
+
+/* Web Results */
+.result-description,
+.result-snippet {
+  color: var(--text-secondary);
+  margin: 0.75rem 0;
+  line-height: 1.6;
+}
+
+.result-meta {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+}
+
+.meta-item {
+  color: var(--text-secondary);
+}
+
+.result-url {
+  margin-top: 1rem;
+}
+
+.result-url a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.result-url a:hover {
+  text-decoration: underline;
+}
+
+/* Insights */
+.insight-item {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.insight-item:last-child {
+  border-bottom: none;
+}
+
+.insight-item h4 {
+  color: var(--primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.insight-item p {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.insight-category,
+.insight-date {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-right: 1rem;
+}
+
+/* Metrics Grid */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.metric-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.metric-label {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.metric-value {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .patent-header,
+  .trial-header,
+  .result-header {
+    flex-direction: column;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
