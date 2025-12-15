@@ -1,0 +1,151 @@
+2025-12-15 19:33:44,988 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:33:45,076 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:33:45,091 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:34:04,029 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\master_agent.py', reloading
+2025-12-15 19:34:06,054 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:34:06,062 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:34:06,160 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:34:06,175 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:34:11,005 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\iqvia_agent.py', reloading
+2025-12-15 19:34:12,905 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:34:12,909 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:34:12,976 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:34:12,986 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:34:39,088 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\exim_agent.py', reloading
+2025-12-15 19:34:41,791 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:34:41,800 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:34:41,893 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:34:41,905 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:34:48,135 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\patent_agent.py', reloading
+2025-12-15 19:34:50,321 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:34:50,327 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:34:50,406 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:34:50,421 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:34:52,274 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\clinical_agent.py', reloading
+2025-12-15 19:34:54,602 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:34:54,614 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:34:54,734 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:34:54,754 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:34:57,833 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\web_agent.py', reloading
+2025-12-15 19:34:59,741 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:34:59,747 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:34:59,841 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:34:59,856 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:35:03,157 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\internal_insights_agent.py', reloading
+2025-12-15 19:35:06,484 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:35:06,495 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:35:06,587 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:35:06,599 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:36:03,025 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\app.py', reloading
+2025-12-15 19:36:05,372 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:36:05,390 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:36:05,559 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:36:05,575 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:36:07,320 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\app.py', reloading
+2025-12-15 19:36:09,817 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:36:09,830 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:36:09,918 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:36:09,929 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:36:10,431 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\app.py', reloading
+2025-12-15 19:36:13,991 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:36:14,008 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:36:14,168 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:36:14,179 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:36:17,456 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\app.py', reloading
+2025-12-15 19:36:19,876 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:36:19,899 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:36:20,001 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:36:20,015 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:36:31,513 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:36:31,593 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:36:31,868 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-12-15 19:36:31,868 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 19:36:31,921 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-15 19:36:33,646 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:36:33,662 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:36:33,754 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:36:33,766 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:38:34,123 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 19:38:34] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-15 19:38:34,383 - __main__ - INFO - Query received - Molecule: Aspirin, Prompt length: 6
+2025-12-15 19:38:34,385 - master_agent - INFO - Processing query for molecule: Aspirin
+2025-12-15 19:38:34,385 - master_agent - WARNING - Error in Unknown agent: IQVIAAgent.fetch_market() takes 2 positional arguments but 3 were given
+2025-12-15 19:38:34,385 - master_agent - WARNING - Error in Unknown agent: EXIMAgent.fetch_trade() takes 2 positional arguments but 3 were given
+2025-12-15 19:38:34,387 - master_agent - WARNING - Error in Unknown agent: PatentAgent.search_patents() takes 2 positional arguments but 3 were given
+2025-12-15 19:38:34,387 - master_agent - WARNING - Error in Unknown agent: ClinicalTrialsAgent.search_trials() takes 2 positional arguments but 3 were given
+2025-12-15 19:38:34,387 - master_agent - WARNING - Error in Unknown agent: WebAgent.search() takes 2 positional arguments but 3 were given
+2025-12-15 19:38:34,389 - master_agent - WARNING - Error in Unknown agent: InternalInsightsAgent.summarize_docs() takes 2 positional arguments but 3 were given
+2025-12-15 19:38:34,398 - master_agent - ERROR - Error processing query for Aspirin: 'NoneType' object has no attribute 'get'
+2025-12-15 19:38:34,404 - __main__ - ERROR - Query processing error: 'NoneType' object has no attribute 'get'
+2025-12-15 19:38:34,404 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 19:38:34] "[35m[1mPOST /query HTTP/1.1[0m" 500 -
+2025-12-15 19:41:48,073 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\master_agent.py', reloading
+2025-12-15 19:41:50,223 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:41:50,299 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:41:50,402 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:41:50,415 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:42:19,759 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:42:19,767 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:42:19,855 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-12-15 19:42:19,855 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 19:42:19,902 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-15 19:42:20,842 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:42:20,847 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:42:20,895 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:42:20,895 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:43:23,819 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:43:23,837 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:43:23,974 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-12-15 19:43:23,975 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 19:43:24,028 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-15 19:43:25,400 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:43:25,400 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:43:25,501 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:43:25,516 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:43:57,108 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 19:43:57] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-15 19:43:57,369 - __main__ - INFO - Query received - Molecule: Aspirin, Prompt length: 6
+2025-12-15 19:43:57,371 - master_agent - INFO - Processing query for molecule: Aspirin
+2025-12-15 19:43:57,371 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2025-12-15 19:43:57,371 - exim_agent - WARNING - EXIM data file not found, using default data
+2025-12-15 19:43:57,374 - patent_agent - WARNING - Patent data file not found
+2025-12-15 19:43:57,374 - clinical_agent - WARNING - Clinical trials data file not found
+2025-12-15 19:43:57,374 - web_agent - INFO - Web: Searching for Aspirin
+2025-12-15 19:43:57,374 - internal_insights_agent - INFO - Internal: Analyzing documents for Aspirin
+2025-12-15 19:43:57,374 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2025-12-15 19:43:57,374 - master_agent - INFO - Query completed for Aspirin in 0.0s
+2025-12-15 19:43:57,378 - utils - INFO - Cache set for molecule: Aspirin
+2025-12-15 19:43:57,378 - __main__ - INFO - Query successful - Molecule: Aspirin
+2025-12-15 19:43:57,379 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 19:43:57] "POST /query HTTP/1.1" 200 -
+2025-12-15 19:44:33,572 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 19:44:33] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-15 19:44:33,835 - __main__ - INFO - Query received - Molecule: Aspirin, Prompt length: 22
+2025-12-15 19:44:33,836 - master_agent - INFO - Processing query for molecule: Aspirin
+2025-12-15 19:44:33,836 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2025-12-15 19:44:33,838 - exim_agent - WARNING - EXIM data file not found, using default data
+2025-12-15 19:44:33,838 - patent_agent - WARNING - Patent data file not found
+2025-12-15 19:44:33,839 - clinical_agent - WARNING - Clinical trials data file not found
+2025-12-15 19:44:33,839 - web_agent - INFO - Web: Searching for Aspirin
+2025-12-15 19:44:33,839 - internal_insights_agent - INFO - Internal: Analyzing documents for Aspirin
+2025-12-15 19:44:33,840 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2025-12-15 19:44:33,841 - master_agent - INFO - Query completed for Aspirin in 0.0s
+2025-12-15 19:44:33,841 - utils - INFO - Cache set for molecule: Aspirin
+2025-12-15 19:44:33,843 - __main__ - INFO - Query successful - Molecule: Aspirin
+2025-12-15 19:44:33,845 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 19:44:33] "POST /query HTTP/1.1" 200 -
+2025-12-15 19:44:53,086 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 19:44:53] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-15 19:44:53,334 - __main__ - INFO - Query received - Molecule: Aspirin, Prompt length: 6
+2025-12-15 19:44:53,334 - utils - INFO - Cache hit for molecule: Aspirin
+2025-12-15 19:44:53,337 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 19:44:53] "POST /query HTTP/1.1" 200 -
+2025-12-15 19:45:08,008 - __main__ - INFO - Report download requested - Molecule: Aspirin
+2025-12-15 19:45:08,030 - __main__ - INFO - Report generated successfully - Molecule: Aspirin
+2025-12-15 19:45:08,097 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 19:45:08] "GET /report/Aspirin HTTP/1.1" 200 -
+2025-12-15 19:45:25,903 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\app.py', reloading
+2025-12-15 19:45:25,905 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\app.py', reloading
+2025-12-15 19:45:26,227 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-15 19:45:27,808 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:45:27,823 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:45:27,896 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:45:27,912 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 19:45:27,920 - master_agent - INFO - MasterAgent initialized with all worker agents
+2025-12-15 19:45:27,937 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 19:45:28,022 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 19:45:28,035 - werkzeug - INFO -  * Debugger PIN: 135-690-218
