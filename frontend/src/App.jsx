@@ -23,12 +23,16 @@ function App() {
         body: JSON.stringify({ prompt, molecule }),
       })
 
-      if (!response.ok) {
-        throw new Error(`API Error: ${response.status}`)
+      const data = await response.json()
+
+      // Handle new response format with status/data wrapper
+      if (data.status === 'error') {
+        throw new Error(data.message || `API Error: ${response.status}`)
       }
 
-      const data = await response.json()
-      setResults(data)
+      // If response has 'data' field, use it; otherwise use the whole response
+      const results = data.data || data
+      setResults(results)
     } catch (err) {
       setError(err.message || 'Failed to fetch results')
     } finally {
@@ -124,10 +128,6 @@ function App() {
           )}
         </div>
       </main>
-
-      <footer className="app-footer">
-        <p>Powered by Multi-Agent AI System | Backend: Flask + CrewAI | Frontend: React + Vite</p>
-      </footer>
     </div>
   )
 }
