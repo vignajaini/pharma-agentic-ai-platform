@@ -5,6 +5,9 @@ from clinical_agent import ClinicalTrialsAgent
 from web_agent import WebAgent
 from internal_insights_agent import InternalInsightsAgent
 from report_generator_agent import ReportGeneratorAgent
+from unmet_needs_analyzer import UnmetNeedsAnalyzer
+from fto_assessor import FTOAssessor
+from pdf_parser import PDFParser
 
 # Import MITBuilder by directly importing the class and its dependency
 import sys
@@ -102,11 +105,16 @@ class MasterAgent:
         self.reporter = ReportGeneratorAgent()
         self.mit_builder = MITBuilder()
         
+        # Initialize new analyzers
+        self.unmet_needs_analyzer = UnmetNeedsAnalyzer()
+        self.fto_assessor = FTOAssessor()
+        self.pdf_parser = PDFParser()
+        
         # Storage for MIT results
         self.mit_store = {}
         self.query_history = []
         
-        logger.info("MasterAgent initialized with all worker agents")
+        logger.info("MasterAgent initialized with all worker agents and analyzers")
 
     def handle_query(self, prompt, molecule):
         """
@@ -142,6 +150,14 @@ class MasterAgent:
             # Build MIT profile
             mit = self.mit_builder.build(molecule, market, trade, patents, trials, web, internal)
             
+            # Analyze unmet needs
+            unmet_needs = self.unmet_needs_analyzer.analyze_unmet_needs(
+                market, trials, patents, web
+            )
+            
+            # Assess FTO risk
+            fto_analysis = self.fto_assessor.assess_fto_risk(molecule, patents, trade)
+            
             # Store MIT for later retrieval
             self.mit_store[molecule] = mit
             
@@ -162,6 +178,8 @@ class MasterAgent:
                 "web": web or {},
                 "internal": internal or {},
                 "mit": mit,
+                "unmet_needs": unmet_needs,
+                "fto_analysis": fto_analysis,
                 "report": report_path,
                 "processing_time_seconds": round(time.time() - start_time, 2),
                 "timestamp": datetime.utcnow().isoformat()
