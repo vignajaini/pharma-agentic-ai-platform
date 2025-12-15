@@ -1,0 +1,162 @@
+.timeline-container {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.timeline-title {
+  text-align: center;
+  color: #1f2937;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.timeline {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 80px;
+}
+
+.marker-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.marker-icon {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.timeline-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #3b82f6;
+}
+
+.stage-title {
+  color: #1f2937;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.stage-description {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.stage-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.detail-bullet {
+  color: #3b82f6;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.detail-text {
+  color: #374151;
+}
+
+.timeline-connector {
+  position: absolute;
+  left: 40px;
+  top: 65px;
+  width: 8px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.connector-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, #3b82f6 0%, #93c5fd 100%);
+  margin-left: 3px;
+}
+
+.connector-arrow {
+  position: absolute;
+  left: -12px;
+  top: 40px;
+  color: #3b82f6;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .timeline-marker {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .marker-icon {
+    font-size: 1.25rem;
+  }
+
+  .timeline-content {
+    margin-left: 0;
+  }
+
+  .timeline-connector {
+    left: 40px;
+    height: 40px;
+  }
+
+  .timeline-title {
+    font-size: 1.4rem;
+  }
+}

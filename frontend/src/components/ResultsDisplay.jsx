@@ -7,12 +7,20 @@ import ClinicalPanel from './panels/ClinicalPanel'
 import WebPanel from './panels/WebPanel'
 import InsightsPanel from './panels/InsightsPanel'
 import MITPanel from './panels/MITPanel'
+import UnmetNeedsPanel from './panels/UnmetNeedsPanel'
+import FTOPanel from './panels/FTOPanel'
+import ChartDisplay from './ChartDisplay'
+import TimelineJourney from './TimelineJourney'
 
 function ResultsDisplay({ results, onDownloadReport }) {
-  const [activeTab, setActiveTab] = useState('mit')
+  const [activeTab, setActiveTab] = useState('journey')
 
   const tabs = [
+    { id: 'journey', label: '🚀 Journey', icon: '🚀' },
+    { id: 'charts', label: '📈 Charts', icon: '📈' },
     { id: 'mit', label: '💡 MIT', icon: '💡' },
+    { id: 'unmet', label: '💡 Unmet Needs', icon: '💡' },
+    { id: 'fto', label: '⚖️ FTO Risk', icon: '⚖️' },
     { id: 'market', label: '📊 Market', icon: '📊' },
     { id: 'trade', label: '🌍 Trade', icon: '🌍' },
     { id: 'patents', label: '📜 Patents', icon: '📜' },
@@ -50,8 +58,20 @@ function ResultsDisplay({ results, onDownloadReport }) {
       </div>
 
       <div className="results-content">
+        {activeTab === 'journey' && (
+          <TimelineJourney data={results} molecule={results.molecule} />
+        )}
+        {activeTab === 'charts' && (
+          <ChartDisplay data={results} />
+        )}
         {activeTab === 'mit' && (
           <MITPanel data={results.mit} molecule={results.molecule} />
+        )}
+        {activeTab === 'unmet' && (
+          <UnmetNeedsPanel data={results.unmet_needs} />
+        )}
+        {activeTab === 'fto' && (
+          <FTOPanel data={results.fto_analysis} />
         )}
         {activeTab === 'market' && (
           <MarketPanel data={results.market} />
