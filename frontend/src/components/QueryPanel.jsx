@@ -51,7 +51,7 @@ function QueryPanel({ onQuery, disabled }) {
             onChange={(e) => setPrompt(e.target.value)}
             disabled={disabled}
             className="form-input form-textarea"
-            rows="6"
+            rows="4"
           />
           <p className="form-hint">Ask specific questions about the molecule</p>
         </div>

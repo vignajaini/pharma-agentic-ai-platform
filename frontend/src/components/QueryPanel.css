@@ -1,49 +1,62 @@
 .query-panel {
-  padding: 1.5rem;
-  background: white;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
   display: flex;
   flex-direction: column;
   height: 100%;
+  gap: 0.5rem;
 }
 
 .query-panel h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: var(--primary);
-  border-bottom: 2px solid var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: #667eea;
+  border-bottom: 3px solid #667eea;
   padding-bottom: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .query-form {
   flex: 0 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .form-group label {
   display: block;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: #333;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #667eea;
 }
 
 .form-input {
   width: 100%;
-  padding: 0.75rem;
-  border: 1px solid var(--border);
-  border-radius: 4px;
+  padding: 0.6rem 0.75rem;
+  border: 2px solid #e0e7ff;
+  border-radius: 6px;
   font-family: inherit;
-  font-size: 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .form-input:focus {
   outline: none;
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+  border-color: #667eea;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15), 0 4px 12px rgba(102, 126, 234, 0.2);
+  background: #fafbff;
 }
 
 .form-input:disabled {
@@ -54,13 +67,13 @@
 
 .form-textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 80px;
 }
 
 .form-hint {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: var(--text-secondary);
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
 }
 
 .validation-error {
@@ -75,21 +88,27 @@
 
 .submit-btn {
   width: 100%;
-  padding: 0.875rem;
+  padding: 0.9rem 1rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.95rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  letter-spacing: 0.3px;
 }
 
 .submit-btn:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+  letter-spacing: 0.5px;
+}
+
+.submit-btn:active:not(:disabled) {
+  transform: translateY(-1px);
 }
 
 .submit-btn:disabled {
@@ -98,11 +117,7 @@
 }
 
 .query-examples {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  background: #f9f9f9;
-  border-radius: 4px;
-  border-left: 3px solid var(--secondary);
+  display: none;
 }
 
 .query-examples h3 {
@@ -128,28 +143,39 @@
 
 .agent-info {
   padding: 1rem;
-  background: #e3f2fd;
-  border-radius: 4px;
-  border-left: 3px solid var(--primary);
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
   flex: 1 1 auto;
   overflow-y: auto;
+  min-height: 120px;
+  margin-top: auto;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
 }
 
 .agent-info h3 {
   font-size: 0.9rem;
-  color: var(--primary);
-  margin-bottom: 0.75rem;
-  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
 }
 
 .agent-info ul {
   list-style: none;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .agent-info li {
-  padding: 0.4rem 0;
-  color: var(--text-secondary);
+  padding: 0.35rem 0;
+  color: #555;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.agent-info li:hover {
+  color: #667eea;
 }
 
 @media (max-width: 1024px) {
