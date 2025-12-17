@@ -60,7 +60,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>💊 Pharma Agentic AI Platform</h1>
+        <h1>💊 InnoMed.AI</h1>
         <p className="subtitle">Molecule Innovation Twin (MIT) Discovery System</p>
       </header>
 
