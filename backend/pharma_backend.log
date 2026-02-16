@@ -222,3 +222,216 @@
 2025-12-15 20:21:25,421 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
 2025-12-15 20:21:25,616 - werkzeug - WARNING -  * Debugger is active!
 2025-12-15 20:21:25,635 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-15 20:24:01,882 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 20:24:01] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-15 20:24:02,129 - __main__ - INFO - Query received - Molecule: Aspirin, Prompt length: 7
+2025-12-15 20:24:02,139 - master_agent - INFO - Processing query for molecule: Aspirin
+2025-12-15 20:24:02,139 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2025-12-15 20:24:02,139 - exim_agent - WARNING - EXIM data file not found, using default data
+2025-12-15 20:24:02,139 - patent_agent - WARNING - Patent data file not found
+2025-12-15 20:24:02,139 - clinical_agent - WARNING - Clinical trials data file not found
+2025-12-15 20:24:02,139 - web_agent - INFO - Web: Searching for Aspirin
+2025-12-15 20:24:02,139 - internal_insights_agent - INFO - Internal: Analyzing documents for Aspirin
+2025-12-15 20:24:02,139 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2025-12-15 20:24:02,155 - fto_assessor - INFO - FTO Assessment for Aspirin: Risk Score 45, Level MEDIUM
+2025-12-15 20:24:02,157 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2025-12-15 20:24:02,157 - master_agent - INFO - Query completed for Aspirin in 0.02s
+2025-12-15 20:24:02,157 - utils - INFO - Cache set for molecule: Aspirin
+2025-12-15 20:24:02,157 - __main__ - INFO - Query successful - Molecule: Aspirin
+2025-12-15 20:24:02,162 - werkzeug - INFO - 127.0.0.1 - - [15/Dec/2025 20:24:02] "POST /query HTTP/1.1" 200 -
+2025-12-15 20:27:50,769 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\app.py', reloading
+2025-12-15 20:27:51,165 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-15 20:27:58,462 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2025-12-15 20:27:58,530 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-15 20:27:58,680 - werkzeug - WARNING -  * Debugger is active!
+2025-12-15 20:27:58,705 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-16 11:39:59,628 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2025-12-16 11:39:59,874 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-16 11:40:00,637 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-12-16 11:40:00,655 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-16 11:40:00,779 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-16 11:40:12,061 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2025-12-16 11:40:12,922 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-16 11:40:15,896 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 11:40:16,243 - werkzeug - INFO -  * Debugger PIN: 744-173-585
+2025-12-16 11:41:02,681 - werkzeug - INFO -  * Detected change in 'F:\\pharma-agentic-ai-platform\\backend\\mit\\innovation_score.py', reloading
+2025-12-16 11:41:02,944 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-16 11:41:05,187 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2025-12-16 11:41:05,235 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-16 11:41:05,404 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 11:41:05,414 - werkzeug - INFO -  * Debugger PIN: 744-173-585
+2025-12-16 11:41:43,667 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 11:41:43] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-16 11:41:43,927 - __main__ - INFO - Query received - Molecule: Aspirin, Prompt length: 6
+2025-12-16 11:41:43,938 - master_agent - INFO - Processing query for molecule: Aspirin
+2025-12-16 11:41:43,965 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2025-12-16 11:41:43,995 - exim_agent - WARNING - EXIM data file not found, using default data
+2025-12-16 11:41:44,009 - patent_agent - WARNING - Patent data file not found
+2025-12-16 11:41:44,015 - clinical_agent - WARNING - Clinical trials data file not found
+2025-12-16 11:41:44,043 - web_agent - INFO - Web: Searching for Aspirin
+2025-12-16 11:41:44,049 - internal_insights_agent - INFO - Internal: Analyzing documents for Aspirin
+2025-12-16 11:41:44,062 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2025-12-16 11:41:44,075 - fto_assessor - INFO - FTO Assessment for Aspirin: Risk Score 45, Level MEDIUM
+2025-12-16 11:41:44,083 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2025-12-16 11:41:44,098 - master_agent - INFO - Query completed for Aspirin in 0.16s
+2025-12-16 11:41:44,116 - utils - INFO - Cache set for molecule: Aspirin
+2025-12-16 11:41:44,151 - __main__ - INFO - Query successful - Molecule: Aspirin
+2025-12-16 11:41:44,197 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 11:41:44] "POST /query HTTP/1.1" 200 -
+2025-12-16 19:26:49,350 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2025-12-16 19:26:49,380 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-16 19:26:49,575 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-12-16 19:26:49,575 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-16 19:26:49,657 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-16 19:26:50,813 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2025-12-16 19:26:50,847 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-16 19:26:50,939 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 19:26:50,953 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-16 19:27:52,982 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:27:52] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-16 19:27:53,240 - __main__ - INFO - Query received - Molecule: Aspirin, Prompt length: 6
+2025-12-16 19:27:53,240 - master_agent - INFO - Processing query for molecule: Aspirin
+2025-12-16 19:27:53,240 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2025-12-16 19:27:53,240 - exim_agent - WARNING - EXIM data file not found, using default data
+2025-12-16 19:27:53,240 - patent_agent - WARNING - Patent data file not found
+2025-12-16 19:27:53,240 - clinical_agent - WARNING - Clinical trials data file not found
+2025-12-16 19:27:53,248 - web_agent - INFO - Web: Searching for Aspirin
+2025-12-16 19:27:53,248 - internal_insights_agent - INFO - Internal: Analyzing documents for Aspirin
+2025-12-16 19:27:53,248 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2025-12-16 19:27:53,248 - fto_assessor - INFO - FTO Assessment for Aspirin: Risk Score 45, Level MEDIUM
+2025-12-16 19:27:53,248 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2025-12-16 19:27:53,248 - master_agent - INFO - Query completed for Aspirin in 0.01s
+2025-12-16 19:27:53,248 - utils - INFO - Cache set for molecule: Aspirin
+2025-12-16 19:27:53,248 - __main__ - INFO - Query successful - Molecule: Aspirin
+2025-12-16 19:27:53,258 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:27:53] "POST /query HTTP/1.1" 200 -
+2025-12-16 19:28:31,417 - __main__ - INFO - Report download requested - Molecule: Aspirin
+2025-12-16 19:28:31,512 - __main__ - INFO - Report generated successfully - Molecule: Aspirin
+2025-12-16 19:28:31,545 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:28:31] "GET /report/Aspirin HTTP/1.1" 200 -
+2025-12-16 19:40:37,900 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:40:37] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-16 19:40:38,095 - __main__ - INFO - Query received - Molecule: Aspirin, Prompt length: 6
+2025-12-16 19:40:38,100 - utils - INFO - Cache hit for molecule: Aspirin
+2025-12-16 19:40:38,116 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:40:38] "POST /query HTTP/1.1" 200 -
+2025-12-16 19:41:09,713 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:41:09] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-16 19:41:10,047 - __main__ - INFO - Query received - Molecule: Aspirin, Prompt length: 6
+2025-12-16 19:41:10,047 - utils - INFO - Cache hit for molecule: Aspirin
+2025-12-16 19:41:10,061 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:41:10] "POST /query HTTP/1.1" 200 -
+2025-12-16 19:41:12,513 - __main__ - INFO - Report download requested - Molecule: Aspirin
+2025-12-16 19:41:12,538 - __main__ - INFO - Report generated successfully - Molecule: Aspirin
+2025-12-16 19:41:12,681 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:41:12] "GET /report/Aspirin HTTP/1.1" 200 -
+2025-12-16 19:45:11,486 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:45:11] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-16 19:45:11,734 - __main__ - INFO - Query received - Molecule: Aspirin, Prompt length: 13
+2025-12-16 19:45:11,736 - master_agent - INFO - Processing query for molecule: Aspirin
+2025-12-16 19:45:11,748 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2025-12-16 19:45:11,750 - exim_agent - WARNING - EXIM data file not found, using default data
+2025-12-16 19:45:11,750 - patent_agent - WARNING - Patent data file not found
+2025-12-16 19:45:11,750 - clinical_agent - WARNING - Clinical trials data file not found
+2025-12-16 19:45:11,750 - web_agent - INFO - Web: Searching for Aspirin
+2025-12-16 19:45:11,750 - internal_insights_agent - INFO - Internal: Analyzing documents for Aspirin
+2025-12-16 19:45:11,757 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2025-12-16 19:45:11,757 - fto_assessor - INFO - FTO Assessment for Aspirin: Risk Score 45, Level MEDIUM
+2025-12-16 19:45:11,760 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2025-12-16 19:45:11,762 - master_agent - INFO - Query completed for Aspirin in 0.02s
+2025-12-16 19:45:11,763 - utils - INFO - Cache set for molecule: Aspirin
+2025-12-16 19:45:11,763 - __main__ - INFO - Query successful - Molecule: Aspirin
+2025-12-16 19:45:11,771 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:45:11] "POST /query HTTP/1.1" 200 -
+2025-12-16 19:45:13,647 - __main__ - INFO - Report download requested - Molecule: Aspirin
+2025-12-16 19:45:13,944 - __main__ - INFO - Report generated successfully - Molecule: Aspirin
+2025-12-16 19:45:14,007 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:45:14] "GET /report/Aspirin HTTP/1.1" 200 -
+2025-12-16 19:45:39,541 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:45:39] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-16 19:45:39,805 - __main__ - INFO - Query received - Molecule: ibuprofen, Prompt length: 13
+2025-12-16 19:45:39,807 - master_agent - INFO - Processing query for molecule: ibuprofen
+2025-12-16 19:45:39,807 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2025-12-16 19:45:39,807 - exim_agent - WARNING - EXIM data file not found, using default data
+2025-12-16 19:45:39,807 - patent_agent - WARNING - Patent data file not found
+2025-12-16 19:45:39,807 - clinical_agent - WARNING - Clinical trials data file not found
+2025-12-16 19:45:39,807 - web_agent - INFO - Web: Searching for Ibuprofen
+2025-12-16 19:45:39,807 - internal_insights_agent - INFO - Internal: Analyzing documents for Ibuprofen
+2025-12-16 19:45:39,807 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2025-12-16 19:45:39,814 - fto_assessor - INFO - FTO Assessment for Ibuprofen: Risk Score 45, Level MEDIUM
+2025-12-16 19:45:39,814 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2025-12-16 19:45:39,816 - master_agent - INFO - Query completed for Ibuprofen in 0.01s
+2025-12-16 19:45:39,816 - utils - INFO - Cache set for molecule: ibuprofen
+2025-12-16 19:45:39,818 - __main__ - INFO - Query successful - Molecule: ibuprofen
+2025-12-16 19:45:39,823 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:45:39] "POST /query HTTP/1.1" 200 -
+2025-12-16 19:48:18,382 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2025-12-16 19:48:18,404 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-16 19:48:18,563 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-12-16 19:48:18,563 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-16 19:48:18,636 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-16 19:48:19,934 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2025-12-16 19:48:19,949 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-16 19:48:20,065 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 19:48:20,083 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-16 19:49:31,005 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:49:31] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-16 19:49:31,215 - __main__ - INFO - Query received - Molecule: Aspirin, Prompt length: 15
+2025-12-16 19:49:31,218 - master_agent - INFO - Processing query for molecule: Aspirin
+2025-12-16 19:49:31,219 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2025-12-16 19:49:31,221 - exim_agent - WARNING - EXIM data file not found, using default data
+2025-12-16 19:49:31,223 - patent_agent - WARNING - Patent data file not found
+2025-12-16 19:49:31,232 - clinical_agent - WARNING - Clinical trials data file not found
+2025-12-16 19:49:31,236 - web_agent - INFO - Web: Searching for Aspirin
+2025-12-16 19:49:31,248 - internal_insights_agent - INFO - Internal: Analyzing documents for Aspirin
+2025-12-16 19:49:31,257 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2025-12-16 19:49:31,264 - fto_assessor - INFO - FTO Assessment for Aspirin: Risk Score 45, Level MEDIUM
+2025-12-16 19:49:31,268 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2025-12-16 19:49:31,279 - master_agent - INFO - Query completed for Aspirin in 0.06s
+2025-12-16 19:49:31,290 - utils - INFO - Cache set for molecule: Aspirin
+2025-12-16 19:49:31,299 - __main__ - INFO - Query successful - Molecule: Aspirin
+2025-12-16 19:49:31,302 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:49:31] "POST /query HTTP/1.1" 200 -
+2025-12-16 19:50:04,162 - __main__ - INFO - Report download requested - Molecule: Aspirin
+2025-12-16 19:50:04,195 - __main__ - INFO - Report generated successfully - Molecule: Aspirin
+2025-12-16 19:50:04,248 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 19:50:04] "GET /report/Aspirin HTTP/1.1" 200 -
+2025-12-16 21:05:18,495 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2025-12-16 21:05:18,595 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-16 21:05:18,866 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-12-16 21:05:18,866 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-16 21:05:18,992 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-16 21:05:22,343 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2025-12-16 21:05:22,371 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-16 21:05:22,612 - werkzeug - WARNING -  * Debugger is active!
+2025-12-16 21:05:22,690 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-16 21:07:35,580 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 21:07:35] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-16 21:07:35,833 - __main__ - INFO - Query received - Molecule: Aspirin, Prompt length: 15
+2025-12-16 21:07:35,838 - master_agent - INFO - Processing query for molecule: Aspirin
+2025-12-16 21:07:35,838 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2025-12-16 21:07:35,838 - exim_agent - WARNING - EXIM data file not found, using default data
+2025-12-16 21:07:35,838 - patent_agent - WARNING - Patent data file not found
+2025-12-16 21:07:35,838 - clinical_agent - WARNING - Clinical trials data file not found
+2025-12-16 21:07:35,844 - web_agent - INFO - Web: Searching for Aspirin
+2025-12-16 21:07:35,852 - internal_insights_agent - INFO - Internal: Analyzing documents for Aspirin
+2025-12-16 21:07:35,854 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2025-12-16 21:07:35,856 - fto_assessor - INFO - FTO Assessment for Aspirin: Risk Score 45, Level MEDIUM
+2025-12-16 21:07:35,856 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2025-12-16 21:07:35,858 - master_agent - INFO - Query completed for Aspirin in 0.02s
+2025-12-16 21:07:35,858 - utils - INFO - Cache set for molecule: Aspirin
+2025-12-16 21:07:35,860 - __main__ - INFO - Query successful - Molecule: Aspirin
+2025-12-16 21:07:35,868 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 21:07:35] "POST /query HTTP/1.1" 200 -
+2025-12-16 21:08:30,106 - __main__ - INFO - Report download requested - Molecule: Aspirin
+2025-12-16 21:08:30,133 - __main__ - INFO - Report generated successfully - Molecule: Aspirin
+2025-12-16 21:08:30,230 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 21:08:30] "GET /report/Aspirin HTTP/1.1" 200 -
+2025-12-17 08:21:51,213 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2025-12-17 08:21:51,230 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-17 08:21:51,440 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2025-12-17 08:21:51,440 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-17 08:21:51,511 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-17 08:21:52,431 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2025-12-17 08:21:52,464 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2025-12-17 08:21:52,531 - werkzeug - WARNING -  * Debugger is active!
+2025-12-17 08:21:52,541 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2025-12-17 08:23:10,600 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2025 08:23:10] "OPTIONS /query HTTP/1.1" 200 -
+2025-12-17 08:23:10,850 - __main__ - INFO - Query received - Molecule: Aspirin, Prompt length: 15
+2025-12-17 08:23:10,861 - master_agent - INFO - Processing query for molecule: Aspirin
+2025-12-17 08:23:10,863 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2025-12-17 08:23:10,863 - exim_agent - WARNING - EXIM data file not found, using default data
+2025-12-17 08:23:10,863 - patent_agent - WARNING - Patent data file not found
+2025-12-17 08:23:10,866 - clinical_agent - WARNING - Clinical trials data file not found
+2025-12-17 08:23:10,866 - web_agent - INFO - Web: Searching for Aspirin
+2025-12-17 08:23:10,868 - internal_insights_agent - INFO - Internal: Analyzing documents for Aspirin
+2025-12-17 08:23:10,868 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2025-12-17 08:23:10,868 - fto_assessor - INFO - FTO Assessment for Aspirin: Risk Score 45, Level MEDIUM
+2025-12-17 08:23:10,868 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2025-12-17 08:23:10,868 - master_agent - INFO - Query completed for Aspirin in 0.01s
+2025-12-17 08:23:10,868 - utils - INFO - Cache set for molecule: Aspirin
+2025-12-17 08:23:10,868 - __main__ - INFO - Query successful - Molecule: Aspirin
+2025-12-17 08:23:10,868 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2025 08:23:10] "POST /query HTTP/1.1" 200 -

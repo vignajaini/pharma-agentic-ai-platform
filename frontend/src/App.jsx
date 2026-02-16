@@ -14,28 +14,67 @@ function App() {
     setError(null)
     setResults(null)
 
+    // Real-time streaming via Server-Sent Events (SSE)
     try {
-      const response = await fetch('http://localhost:8000/query', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ prompt, molecule }),
-      })
+      const url = `http://localhost:8000/stream-query?molecule=${encodeURIComponent(molecule)}&prompt=${encodeURIComponent(prompt)}`
+      const es = new EventSource(url)
 
-      const data = await response.json()
+      es.onmessage = (evt) => {
+        try {
+          const payload = JSON.parse(evt.data)
+          // Handle types: status, agent, mit, unmet_needs, fto, report, done, error, llm_token
+          if (payload.type === 'done') {
+            setResults(payload.result)
+            setLoading(false)
+            es.close()
+            return
+          }
 
-      // Handle new response format with status/data wrapper
-      if (data.status === 'error') {
-        throw new Error(data.message || `API Error: ${response.status}`)
+          if (payload.type === 'error') {
+            setError(payload.message || 'Stream error')
+            setLoading(false)
+            es.close()
+            return
+          }
+
+          if (payload.type === 'agent') {
+            // Store per-agent data under results.agents.<agentName>
+            setResults(prev => ({
+              ...(prev || {}),
+              agents: {
+                ...((prev && prev.agents) || {}),
+                [payload.agent]: payload.data
+              }
+            }))
+            return
+          }
+
+          if (payload.type === 'llm_token') {
+            // Append token to a streaming buffer under results.llm_stream
+            setResults(prev => ({
+              ...(prev || {}),
+              llm_stream: ((prev && prev.llm_stream) || '') + (payload.data || '')
+            }))
+            return
+          }
+
+          // Default: store by type key (mit, unmet_needs, fto, report, status, etc.)
+          setResults(prev => ({ ...(prev || {}), [payload.type]: payload.data || payload }))
+
+        } catch (e) {
+          console.error('Failed to parse stream event', e)
+        }
       }
 
-      // If response has 'data' field, use it; otherwise use the whole response
-      const results = data.data || data
-      setResults(results)
+      es.onerror = (err) => {
+        console.error('EventSource error', err)
+        setError('Streaming connection error')
+        setLoading(false)
+        es.close()
+      }
+
     } catch (err) {
-      setError(err.message || 'Failed to fetch results')
-    } finally {
+      setError(err.message || 'Failed to start streaming')
       setLoading(false)
     }
   }
