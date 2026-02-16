@@ -1,5 +1,6 @@
 import logging
 from datetime import datetime
+import os
 
 # Configure logging
 logging.basicConfig(
@@ -21,6 +22,9 @@ API_CONFIG = {
     'CACHE_TTL': 3600,  # 1 hour
     'LOG_REQUESTS': True,
     'ALLOWED_METHODS': ['POST', 'GET'],
+    # LLM / provider configuration (set via environment variables for production)
+    'LLM_PROVIDER': os.getenv('LLM_PROVIDER', 'openai'),
+    'OPENAI_API_KEY': os.getenv('OPENAI_API_KEY', None),
 }
 
 # Database/Storage paths

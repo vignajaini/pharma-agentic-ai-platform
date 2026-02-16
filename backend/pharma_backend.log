@@ -435,3 +435,189 @@
 2025-12-17 08:23:10,868 - utils - INFO - Cache set for molecule: Aspirin
 2025-12-17 08:23:10,868 - __main__ - INFO - Query successful - Molecule: Aspirin
 2025-12-17 08:23:10,868 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2025 08:23:10] "POST /query HTTP/1.1" 200 -
+2026-02-16 19:50:42,391 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 19:50:42,402 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 19:50:42,597 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2026-02-16 19:50:42,598 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-16 19:50:42,633 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 19:50:43,586 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 19:50:43,620 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 19:50:43,704 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 19:50:43,718 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 19:51:29,772 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2026 19:51:29] "GET /stream-query?molecule=Aspirin&prompt=patent%0A HTTP/1.1" 200 -
+2026-02-16 19:51:29,772 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2026-02-16 19:51:29,772 - exim_agent - WARNING - EXIM data file not found, using default data
+2026-02-16 19:51:29,772 - patent_agent - WARNING - Patent data file not found
+2026-02-16 19:51:29,776 - clinical_agent - WARNING - Clinical trials data file not found
+2026-02-16 19:51:29,776 - web_agent - INFO - Web: Searching for Aspirin
+2026-02-16 19:51:29,778 - internal_insights_agent - INFO - Internal: Analyzing documents for Aspirin
+2026-02-16 19:51:29,779 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2026-02-16 19:51:29,779 - fto_assessor - INFO - FTO Assessment for Aspirin: Risk Score 45, Level MEDIUM
+2026-02-16 19:51:29,779 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2026-02-16 20:15:36,321 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2026 20:15:36] "GET /stream-query?molecule=Aspirin&prompt=patent%0A HTTP/1.1" 200 -
+2026-02-16 20:15:36,321 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2026-02-16 20:15:36,321 - exim_agent - WARNING - EXIM data file not found, using default data
+2026-02-16 20:15:36,321 - patent_agent - WARNING - Patent data file not found
+2026-02-16 20:15:36,321 - clinical_agent - WARNING - Clinical trials data file not found
+2026-02-16 20:15:36,331 - web_agent - INFO - Web: Searching for Aspirin
+2026-02-16 20:15:36,333 - internal_insights_agent - INFO - Internal: Analyzing documents for Aspirin
+2026-02-16 20:15:36,337 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2026-02-16 20:15:36,339 - fto_assessor - INFO - FTO Assessment for Aspirin: Risk Score 45, Level MEDIUM
+2026-02-16 20:15:36,341 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2026-02-16 20:19:11,053 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2026 20:19:11] "GET /stream-query?molecule=aspirin&prompt=patent HTTP/1.1" 200 -
+2026-02-16 20:19:11,053 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2026-02-16 20:19:11,053 - exim_agent - WARNING - EXIM data file not found, using default data
+2026-02-16 20:19:11,053 - patent_agent - WARNING - Patent data file not found
+2026-02-16 20:19:11,060 - clinical_agent - WARNING - Clinical trials data file not found
+2026-02-16 20:19:11,060 - web_agent - INFO - Web: Searching for Aspirin
+2026-02-16 20:19:11,062 - internal_insights_agent - INFO - Internal: Analyzing documents for Aspirin
+2026-02-16 20:19:11,063 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2026-02-16 20:19:11,063 - fto_assessor - INFO - FTO Assessment for Aspirin: Risk Score 45, Level MEDIUM
+2026-02-16 20:19:11,065 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2026-02-16 20:20:32,043 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\patent_agent.py', reloading
+2026-02-16 20:20:32,240 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:20:33,707 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:20:33,729 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:20:33,818 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:20:33,832 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:20:38,392 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\clinical_agent.py', reloading
+2026-02-16 20:20:38,682 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:20:39,484 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:20:39,511 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:20:39,576 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:20:39,585 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:21:03,361 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\patent_agent.py', reloading
+2026-02-16 20:21:03,488 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:21:04,539 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:21:04,568 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:21:04,632 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:21:04,654 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:21:25,365 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2026 20:21:25] "GET /stream-query?molecule=methane&prompt=details HTTP/1.1" 200 -
+2026-02-16 20:21:25,365 - iqvia_agent - WARNING - IQVIA data file not found, using default data
+2026-02-16 20:21:25,365 - exim_agent - WARNING - EXIM data file not found, using default data
+2026-02-16 20:21:25,365 - patent_agent - WARNING - Patent data file not found
+2026-02-16 20:21:25,375 - clinical_agent - WARNING - Clinical trials data file not found
+2026-02-16 20:21:25,382 - web_agent - INFO - Web: Searching for Methane
+2026-02-16 20:21:25,384 - internal_insights_agent - INFO - Internal: Analyzing documents for Methane
+2026-02-16 20:21:25,384 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2026-02-16 20:21:25,388 - fto_assessor - INFO - FTO Assessment for Methane: Risk Score 45, Level MEDIUM
+2026-02-16 20:21:25,391 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2026-02-16 20:22:47,496 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\iqvia_agent.py', reloading
+2026-02-16 20:22:47,672 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:22:49,674 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:22:49,711 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:22:49,875 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:22:49,892 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:22:53,475 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\exim_agent.py', reloading
+2026-02-16 20:22:53,642 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:22:55,664 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:22:55,722 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:22:55,857 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:22:55,886 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:22:57,958 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\patent_agent.py', reloading
+2026-02-16 20:22:58,356 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:23:00,734 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:23:00,769 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:23:00,879 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:23:00,899 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:23:02,977 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\clinical_agent.py', reloading
+2026-02-16 20:23:03,178 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:23:06,335 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:23:06,388 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:23:06,640 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:23:06,660 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:24:26,346 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:24:26,369 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:24:26,539 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2026-02-16 20:24:26,542 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-16 20:24:26,578 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:24:28,226 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:24:28,277 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:24:28,382 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:24:28,394 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:24:54,596 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2026 20:24:54] "GET /stream-query?molecule=methane&prompt=details HTTP/1.1" 200 -
+2026-02-16 20:24:54,596 - iqvia_agent - INFO - IQVIA: Found market data for Methane
+2026-02-16 20:24:54,598 - exim_agent - INFO - EXIM: Found trade data for Methane
+2026-02-16 20:24:54,601 - patent_agent - INFO - Patent: Found 0 patents for Methane
+2026-02-16 20:24:54,607 - clinical_agent - INFO - Clinical: Found 0 trials for Methane
+2026-02-16 20:24:54,611 - web_agent - INFO - Web: Searching for Methane
+2026-02-16 20:24:54,615 - internal_insights_agent - INFO - Internal: Analyzing documents for Methane
+2026-02-16 20:24:54,617 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2026-02-16 20:24:54,640 - fto_assessor - INFO - FTO Assessment for Methane: Risk Score 45, Level MEDIUM
+2026-02-16 20:24:54,640 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2026-02-16 20:28:32,484 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\app.py', reloading
+2026-02-16 20:28:32,735 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:28:35,124 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:28:35,193 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:28:35,557 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:28:35,573 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:29:26,192 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\app.py', reloading
+2026-02-16 20:29:26,800 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:29:27,950 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:29:27,974 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:29:28,066 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:29:28,078 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:29:40,910 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:29:40,934 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:29:41,059 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2026-02-16 20:29:41,059 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-16 20:29:41,091 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:29:42,286 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:29:42,326 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:29:42,439 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:29:42,450 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:29:53,834 - werkzeug - INFO - 127.0.0.1 - - [16/Feb/2026 20:29:53] "GET /stream-query?molecule=Aspirin&prompt=details HTTP/1.1" 200 -
+2026-02-16 20:29:53,834 - iqvia_agent - INFO - IQVIA: Found market data for Aspirin
+2026-02-16 20:29:53,837 - exim_agent - INFO - EXIM: Found trade data for Aspirin
+2026-02-16 20:29:53,839 - patent_agent - INFO - Patent: Found 0 patents for Aspirin
+2026-02-16 20:29:53,841 - clinical_agent - INFO - Clinical: Found 0 trials for Aspirin
+2026-02-16 20:29:53,851 - web_agent - INFO - Web: Searching for Aspirin
+2026-02-16 20:29:53,853 - internal_insights_agent - INFO - Internal: Analyzing documents for Aspirin
+2026-02-16 20:29:53,853 - unmet_needs_analyzer - INFO - Unmet needs analysis complete. Opportunity Score: 73
+2026-02-16 20:29:53,857 - fto_assessor - INFO - FTO Assessment for Aspirin: Risk Score 45, Level MEDIUM
+2026-02-16 20:29:53,859 - master_agent - WARNING - Error in Unknown agent: ReportGeneratorAgent.generate_pdf_summary() takes 2 positional arguments but 3 were given
+2026-02-16 20:31:43,364 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\exim_agent.py', reloading
+2026-02-16 20:31:43,474 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:31:44,729 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:31:44,746 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:31:44,798 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:31:44,815 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:31:45,964 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\fto_assessor.py', reloading
+2026-02-16 20:31:46,114 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:31:47,240 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:31:47,270 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:31:47,344 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:31:47,349 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:31:47,410 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\venv\\Lib\\site-packages\\pkg_resources\\extern\\__init__.py', reloading
+2026-02-16 20:31:47,545 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:31:48,445 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:31:48,469 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:31:48,526 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:31:48,527 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:31:55,851 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\patent_agent.py', reloading
+2026-02-16 20:31:55,958 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:31:56,770 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:31:56,791 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:31:56,853 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:31:56,853 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:32:10,558 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\clinical_agent.py', reloading
+2026-02-16 20:32:10,691 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:32:11,738 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:32:11,767 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:32:11,823 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:32:11,823 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:32:30,911 - werkzeug - INFO -  * Detected change in 'E:\\pharma-agentic-ai-platform\\backend\\patent_agent.py', reloading
+2026-02-16 20:32:31,262 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-02-16 20:32:32,004 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:32:32,021 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:32:32,086 - werkzeug - WARNING -  * Debugger is active!
+2026-02-16 20:32:32,098 - werkzeug - INFO -  * Debugger PIN: 135-690-218
+2026-02-16 20:33:21,169 - master_agent - INFO - MasterAgent initialized with all worker agents and analyzers
+2026-02-16 20:33:21,204 - __main__ - INFO - Starting Pharma Agentic AI Platform Backend
+2026-02-16 20:33:21,307 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+2026-02-16 20:33:21,307 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-16 20:33:21,346 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)

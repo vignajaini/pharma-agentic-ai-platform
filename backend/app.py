@@ -1,7 +1,11 @@
 import sys
 import os
 import logging
-from flask import Flask, request, jsonify, send_file
+from flask import Flask, request, jsonify, send_file, Response, stream_with_context
+import json
+import threading
+import queue
+import urllib.parse
 from flask_cors import CORS
 from datetime import datetime
 from werkzeug.utils import secure_filename
@@ -192,6 +196,30 @@ def list_agents():
     }
     return formatter.success(agents, "Available agents")
 
+
+@app.route("/debug/trade/<molecule>", methods=["GET"])
+@handle_errors
+def debug_trade(molecule):
+    """Debug endpoint: return EXIM trade data for molecule"""
+    result = master.exim.fetch_trade(molecule)
+    return formatter.success(result, f"EXIM trade data for {molecule}")
+
+
+@app.route("/debug/patents/<molecule>", methods=["GET"])
+@handle_errors
+def debug_patents(molecule):
+    """Debug endpoint: return patent search results for molecule"""
+    result = master.patent.search_patents(molecule)
+    return formatter.success(result, f"Patents for {molecule}")
+
+
+@app.route("/debug/trials/<molecule>", methods=["GET"])
+@handle_errors
+def debug_trials(molecule):
+    """Debug endpoint: return clinical trial search results for molecule"""
+    result = master.clinical.search_trials(molecule)
+    return formatter.success(result, f"Clinical trials for {molecule}")
+
 # Error handlers
 @app.errorhandler(404)
 def not_found(e):
@@ -381,6 +409,64 @@ def batch_analyze():
     except Exception as e:
         logger.error(f"Batch analysis error: {str(e)}")
         return formatter.error(f"Batch analysis failed: {str(e)}", 500)
+
+
+@app.route("/api/v1/stream-query", methods=["GET"])
+@app.route("/stream-query", methods=["GET"])  # Backward compatibility
+@handle_errors
+def stream_query():
+    """Stream partial analysis results using Server-Sent Events (SSE).
+
+    Query parameters:
+      - molecule: molecule name
+      - prompt: query prompt (URL encoded)
+    """
+    molecule = request.args.get('molecule', '')
+    prompt = request.args.get('prompt', '')
+
+    # Simple validation
+    validation_errors = validator.validate_query({"molecule": molecule, "prompt": prompt})
+    if validation_errors:
+        return formatter.validation_error(validation_errors)
+
+    q = queue.Queue()
+
+    def emitter(item):
+        # Ensure JSON serializable
+        try:
+            q.put(json.dumps(item))
+        except Exception:
+            q.put(json.dumps({"type": "error", "message": "Failed to serialize event"}))
+
+    def worker():
+        try:
+            master.handle_query_stream(prompt, molecule, emitter)
+        except Exception as e:
+            emitter({"type": "error", "message": str(e)})
+        finally:
+            # signal done if not already
+            q.put(json.dumps({"type": "__stream_end__"}))
+
+    threading.Thread(target=worker, daemon=True).start()
+
+    def event_stream():
+        # yield events as they arrive
+        while True:
+            item = q.get()
+            if not item:
+                continue
+            try:
+                parsed = json.loads(item)
+            except Exception:
+                parsed = {"type": "error", "message": "malformed"}
+
+            if parsed.get('type') == '__stream_end__':
+                break
+
+            # SSE format: data: <json>\n\n
+            yield f"data: {json.dumps(parsed)}\n\n"
+
+    return Response(stream_with_context(event_stream()), mimetype='text/event-stream')
 
 # Request/Response logging middleware
 @app.before_request

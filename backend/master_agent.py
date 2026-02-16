@@ -145,6 +145,7 @@ class MasterAgent:
             patents = self._safe_call(self.patent.search_patents, molecule, agent_name="Patent")
             trials = self._safe_call(self.clinical.search_trials, molecule, agent_name="Clinical")
             web = self._safe_call(self.web.search, molecule, agent_name="Web")
+            # Pass emitter through when available for streaming; default call remains for non-stream mode
             internal = self._safe_call(self.internal.summarize_docs, molecule, agent_name="Internal")
 
             # Build MIT profile
@@ -212,6 +213,90 @@ class MasterAgent:
         """
         molecule = molecule.strip().title()
         return self.mit_store.get(molecule)
+
+    def handle_query_stream(self, prompt, molecule, emitter):
+        """
+        Handle a molecule analysis query and emit partial results via `emitter` callback.
+
+        Args:
+            prompt: User query/prompt
+            molecule: Molecule name to analyze
+            emitter: Callable that accepts a dictionary and will be used to stream updates
+        Returns:
+            Final result dict (also emitted with type 'done')
+        """
+        start_time = time.time()
+
+        if not molecule:
+            molecule = self.extract_molecule(prompt) or "Unknown Molecule"
+
+        molecule = molecule.strip().title()
+
+        try:
+            emitter({"type": "status", "message": f"Starting analysis for {molecule}"})
+
+            market = self._safe_call(self.iqvia.fetch_market, molecule, agent_name="IQVIA Market")
+            emitter({"type": "agent", "agent": "iqvia", "data": market})
+
+            trade = self._safe_call(self.exim.fetch_trade, molecule, agent_name="EXIM Trade")
+            emitter({"type": "agent", "agent": "exim", "data": trade})
+
+            patents = self._safe_call(self.patent.search_patents, molecule, agent_name="Patent")
+            emitter({"type": "agent", "agent": "patent", "data": patents})
+
+            trials = self._safe_call(self.clinical.search_trials, molecule, agent_name="Clinical")
+            emitter({"type": "agent", "agent": "clinical", "data": trials})
+
+            web = self._safe_call(self.web.search, molecule, agent_name="Web")
+            emitter({"type": "agent", "agent": "web", "data": web})
+
+            # Allow the internal agent to stream via the provided emitter
+            internal = self._safe_call(self.internal.summarize_docs, molecule, emitter, agent_name="Internal")
+            emitter({"type": "agent", "agent": "internal", "data": internal})
+
+            emitter({"type": "status", "message": "Building MIT profile"})
+            mit = self.mit_builder.build(molecule, market, trade, patents, trials, web, internal)
+            emitter({"type": "mit", "data": mit})
+
+            emitter({"type": "status", "message": "Analyzing unmet needs"})
+            unmet_needs = self.unmet_needs_analyzer.analyze_unmet_needs(
+                market, trials, patents, web
+            )
+            emitter({"type": "unmet_needs", "data": unmet_needs})
+
+            emitter({"type": "status", "message": "Assessing FTO risk"})
+            fto_analysis = self.fto_assessor.assess_fto_risk(molecule, patents, trade)
+            emitter({"type": "fto", "data": fto_analysis})
+
+            self.mit_store[molecule] = mit
+
+            emitter({"type": "status", "message": "Generating report"})
+            report_path = self._safe_call(self.reporter.generate_pdf_summary, mit, "Report Generation")
+            emitter({"type": "report", "data": report_path})
+
+            result = {
+                "molecule": molecule,
+                "market": market or {},
+                "trade": trade or {},
+                "patents": patents or [],
+                "trials": trials or [],
+                "web": web or {},
+                "internal": internal or {},
+                "mit": mit,
+                "unmet_needs": unmet_needs,
+                "fto_analysis": fto_analysis,
+                "report": report_path,
+                "processing_time_seconds": round(time.time() - start_time, 2),
+                "timestamp": datetime.utcnow().isoformat()
+            }
+
+            # Emit final result and a done marker
+            emitter({"type": "done", "result": result})
+            return result
+
+        except Exception as e:
+            emitter({"type": "error", "message": str(e)})
+            raise
 
     def get_query_history(self):
         """Get analysis history"""
